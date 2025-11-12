@@ -5,7 +5,7 @@ app = FastAPI()
 
 @app.get("/")
 async def root():
-    return {"message": "Hello Michael"}
+    return {"message": "Hello Jero"}
 
 @app.get("/add/{num1}/{num2}")
 async def add(num1: int, num2: int):
@@ -15,4 +15,4 @@ async def add(num1: int, num2: int):
     return {"total": total}
 
 if __name__ == '__main__':
-    uvicorn.run(app, port=8081, host='0.0.0.0')
+    uvicorn.run(app, port=8080, host='0.0.0.0')
